@@ -6,30 +6,34 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  firstName: "Zihan",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "Wang",
+  message1: " (･ω･) Welcome to my personal website! You can also call me Tony! (･ω･)",
+  message2: " I am an innovative Aggie, pursuing my Master's in Computer Science, set to graduate in May 2024!",
+  message3: " I am actively seeking a full-time position in the coding domain, and I'll be available to start from January 2024. ",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
-    },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
-    },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
+      url: "https://github.com/zihanwang1819",
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/zihanwang1819/",
     },
     {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      image: "fa-facebook",
+      url: "https://www.facebook.com/profile.php?id=100079967794655",
+    },
+    {
+      image: "fas fa-phone smaller-icon",
+      url: "tel:469-968-6754",
+      style: { fontSize: '2.5rem' }
+    },
+    {
+      image: "fas fa-envelope smaller-icon",
+      url: "mailto:zxw170530@tamu.edu",
+      style: { fontSize: '2.5rem' }
     },
   ],
 };
@@ -51,11 +55,11 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/zihanwang.jpg"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+    "My name is Zihan Wang. In 2024, I will proudly obtain my Master's degree in Computer Science from Texas A&M University, having previously secured my Bachelor of Science degree from the University of Texas at Dallas in 2021. I am fervently driven to explore new horizons and immerse myself in the exciting realm of cutting-edge technologies. As I navigate the ever-evolving challenges of the IT world, my ongoing education continually reinforces my appreciation for the transformative power of technology in our lives.",
+  resume: "https://docs.google.com/document/d/1unnPBew1_HBV-JKRsll8KbRs3ecnFl6LgPZ_kXZnSTc/edit?usp=sharing",
 };
 
 // PROJECTS SECTION
@@ -131,7 +135,7 @@ const getInTouch = {
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
@@ -144,6 +148,18 @@ const experiences = {
       companylogo: require('../assets/img/boeing.png'),
       date: 'May 2017 – May 2018',
     },
+    {
+      role: 'Front-End Developer',
+      companylogo: require('../assets/img/boeing.png'),
+      date: 'May 2017 – May 2018',
+    },
+  ]
+}
+
+const certifications = {
+  show: true,
+  heading: "certifications",
+  data: [
   ]
 }
 

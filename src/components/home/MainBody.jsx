@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Typist from 'react-typist-component';
 import { Jumbotron } from "./migration";
 
 const MainBody = React.forwardRef(
-  ({ gradient, title, message, icons }, ref) => {
+  ({ gradient, title, message1, message2, message3, icons }, ref) => {
+    const [showPhone, setShowPhone] = useState(false);
     return (
       <Jumbotron
         fluid
@@ -22,22 +23,40 @@ const MainBody = React.forwardRef(
           </h1>
           <Typist>
             <div className="lead typist">
-              {message}
+              {message1}
+            </div>
+          </Typist>
+          <Typist>
+            <div className="lead typist">
+              {message2}
+            </div>
+          </Typist>
+          <Typist>
+            <div className="lead typist">
+              {message3}
             </div>
           </Typist>
           <div className="p-5">
-            {icons.map((icon, index) => (
-              <a
-                key={`social-icon-${index}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                href={icon.url}
-                aria-label={`My ${icon.image.split("-")[1]}`}
-              >
-                <i className={`fab ${icon.image}  fa-3x socialicons`} />
-              </a>
-            ))}
+            {icons.map((icon, index) => {
+              return icon.image === 'fas fa-phone' ? (
+                <div key={index} onClick={() => setShowPhone(!showPhone)}>
+                  <i className={`${icon.image} fa-3x socialicons`} />
+                  {showPhone && <span className="ml-2">{icon.url.replace("tel:", "")}</span>}
+              </div>
+              ) : (
+                  <a
+                      key={`social-icon-${index}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={icon.url}
+                      aria-label={`My ${icon.image.split("-")[1]}`}
+                  >
+                      <i className={`fab ${icon.image}  fa-3x socialicons`} />
+                  </a>
+              );
+            })}
           </div>
+
           <a
             className="btn btn-outline-light btn-lg "
             href="#aboutme"

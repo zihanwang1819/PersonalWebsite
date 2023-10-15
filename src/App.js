@@ -8,7 +8,8 @@ import {
   leadership,
   skills,
   getInTouch,
-  experiences
+  experiences,
+  certifications
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -22,6 +23,7 @@ import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
+import Certification from "./components/home/Certification";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -29,7 +31,9 @@ const Home = React.forwardRef((props, ref) => {
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-        message={mainBody.message}
+        message1={mainBody.message1}
+        message2={mainBody.message2}
+        message3={mainBody.message3}
         icons={mainBody.icons}
         ref={ref}
       />
