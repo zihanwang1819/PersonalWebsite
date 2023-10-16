@@ -1,5 +1,5 @@
 import React from 'react';
-import CertificationPdf from "./CertificationPdf";
+import CertificationCard from "./CertificationCard";
 import { Jumbotron } from './migration';
 import {
   Container,
@@ -17,7 +17,7 @@ const Certification = ({ certifications }) => {
           <Row>
             {
               certifications.data.map((data, index) => {
-                return <CertificationPdf key={index} data={data} />
+                return <CertificationCard key={index} data={data} />
               })
             }
           </Row>

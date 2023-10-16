@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Zihan",
   middleName: "",
   lastName: "Wang",
-  message1: " (･ω･) Welcome to my personal website! You can also call me Tony! (･ω･)",
+  message1: " (^o^)丿 Greeting! Welcome to my personal website! You can also call me Tony! (･ω･)",
   message2: " I am an innovative Aggie, pursuing my Master's in Computer Science, set to graduate in May 2024!",
   message3: " I am actively seeking a full-time position in the coding domain, and I'll be available to start from January 2024. ",
   icons: [
@@ -54,11 +54,11 @@ const mainBody = {
 
 const about = {
   show: true,
-  heading: "About Me",
+  heading: "Who is Zihan Wang?",
   imageLink: require("../editable-stuff/zihanwang.jpg"),
   imageSize: 375,
   message:
-    "My name is Zihan Wang. In 2024, I will proudly obtain my Master's degree in Computer Science from Texas A&M University, having previously secured my Bachelor of Science degree from the University of Texas at Dallas in 2021. I am fervently driven to explore new horizons and immerse myself in the exciting realm of cutting-edge technologies. As I navigate the ever-evolving challenges of the IT world, my ongoing education continually reinforces my appreciation for the transformative power of technology in our lives.",
+    "An IT guy with an thirst for learning and great experiences under my belt! In 2024, I will proudly obtain my Master's degree in Computer Science from Texas A&M University, having previously secured my Bachelor of Science degree from the University of Texas at Dallas in 2021. I am fervently driven to explore new horizons and immerse myself in the exciting realm of cutting-edge technologies. As I navigate the ever-evolving challenges of the IT world, my ongoing education continually reinforces my appreciation for the transformative power of technology in our lives.",
   resume: "https://docs.google.com/document/d/1unnPBew1_HBV-JKRsll8KbRs3ecnFl6LgPZ_kXZnSTc/edit?usp=sharing",
 };
 
@@ -68,7 +68,7 @@ const about = {
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
 const repos = {
-  show: true,
+  show: false,
   heading: "Recent Projects",
   gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
   reposLength: 4,
@@ -139,27 +139,58 @@ const experiences = {
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'Machine Learning Engineer Intern',
+      companylogo: require('../assets/img/KBR.png'),
+      date: 'May 2023 – Present',
+      location: 'Sioux Falls, South Dakota, United States',
+      description: 'During my internship at KBR, I had the privilege to collaborate with the United States Geological Survey (USGS), a subsidiary of the U.S. Department of the Interior. My primary responsibility was to utilize deep learning techniques to process Earth observation satellite images taken from the 1970s to the 1990s. Due to the resolution constraints of these images, modern GIS technology could not effectively detect cloud shadows, and the legacy GIS methods from that were outdated. By solving this, I engaged in training models using deep learning that learned from more recent images to predict cloud shadows in these older photographs. In addition to this, My responsibilities include writing scripts to enhance training efficiency, establishing machine learning pipelines for automation, managing resources in the AWS cloud environment, and undertaking other related support and maintenance tasks. ',
+      keyword: 'KeyWords: Neural network(UNet, ResNet, CNN), Amazon Web Service(EC2, S3, EBS, SageMaker), Python(ML Training, Pipeline), Shell(Scripting, Deployment), Linux, Jira, Agile'
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Software Development Engineer Intern',
+      companylogo: require('../assets/img/Amazon.png'),
+      date: 'May 2022 – Aug 2022',
+      location: 'Austin, Texas, United States',
+      description: 'During my software engineering internship at Amazon, my role closely resembled that of a Cloud Developer. My primary task was to assist my team in developing a tool for rapid log retrieval during on-call shifts, addressing challenges we faced with AWS centralized logging practices. Our distributed system spanned multiple AWS accounts and was deployed in the cloud, processing daily log traffic of up to several hundred TB, making log searches dauntingly complex. To address this, the tool I designed utilized the Open Search service, an AWS offering built upon Elastic Search. I also incorporated AWS Kinesis Firehose to facilitate the centralized transfer of logs across account destinations to S3, enabling efficient Open Search operations. Additionally, I deployed Kibana on EC2, providing the team with a user interface for more effective log flow monitoring. This project significantly reduced search times and markedly boosted the operational efficiency of team members. ',
+      keyword: 'KeyWords: Amazon Web Service(EC2, S3, EBS, Lambda, ElasticSearch, Kibana, Kinesis Firehose, CloudFormation), TypeScript(AWS CDK, Deployment), Python(Testing), Git'
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Grader & Senior Grader',
+      companylogo: require('../assets/img/TexasA&M.jpg'),
+      date: 'Jan 2022 - May 2022 & Jan 2023 - May 2023',
+      location: 'College Station, Texas, United States',
+      description: 'At Texas A&M University, I served as a Grader and later as a Senior Grader, roles that essentially functioned as a Teaching Assistant. I was involved with the CSCE314 course, focusing on Programming Languages. My responsibilities included grading assignments, overseeing exams, and addressing QA sections. The course centered on two programming languages: Java and Haskell. By attending every session, I was able to deepen my understanding of Java, filling in knowledge gaps and strengthening my skills in Java programming and OOP design. I also gained the knowledge about the grammar rule of Haskell.',
+      keyword: 'KeyWords: Java, Object Oriented Programming, Haskell'
+    },
+    {
+      role: 'Software Engineer Intern',
+      companylogo: require('../assets/img/DerbySoft.png'),
+      date: 'Dec 2020 – Aug 2021',
+      location: 'Dallas, Texas, United States',
+      description: 'My internship experience at DerbySoft was distinctively different from my later internships. There, I primarily collaborated with a team of software engineers, dedicated to resolving system glitches and ensuring the stability of our online platform. My role was Java Developer, guided by the project manager, I also played a role in developing new features for our clients on the portal website. Specifically, my responsibilities included Utilizing SQL to query error information within the database, Tracking missing data within MVC projects and adjusting the code to rectify these issues, Designing and implementing new features for the portal website, Collaborating with the team to prepare for the migration of client data into our system. ',
+      keyword: 'KeyWords: Java(Spring MVC), MySQL, Javascript(React), Postman, Jira, Git, Agile'
     },
   ]
 }
 
 const certifications = {
   show: true,
-  heading: "certifications",
+  heading: "Certifications",
   data: [
+    {
+      certification_name: 'xxxxxxxxxxxxxxxxxx',
+      certification_picture: require('../assets/img/AWS_C2.png'),
+      certification_ID: 'xxxxxxxxxxxxxxxxxx',
+      certification_date: 'xxxxxxxxxxxxxxxxxx',
+      certification_website: 'xxxxxxxxxxxxxxxxxx',
+    },
+    {
+      certification_name: 'xxxxxxxxxxxxxxxxxx',
+      certification_picture: require('../assets/img/Image_20231016010049.png'),
+      certification_ID: 'xxxxxxxxxxxxxxxxxx',
+      certification_date: 'xxxxxxxxxxxxxxxxxx',
+      certification_website: 'xxxxxxxxxxxxxxxxxx',
+    },
   ]
 }
 
@@ -168,4 +199,4 @@ const certifications = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, certifications };
