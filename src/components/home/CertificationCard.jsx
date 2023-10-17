@@ -16,7 +16,9 @@ const CertificationCard = ({ data }) => {
           <br />
           <strong>{data.certification_date}</strong>
           <br />
-          {data.certification_website}
+          <a href="https://aws.amazon.com/verification" target="_blank" rel="noopener noreferrer">
+            {data.certification_website}
+          </a>
         </p>
 
       </div>

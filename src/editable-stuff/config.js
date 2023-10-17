@@ -208,14 +208,14 @@ const certifications = {
       certification_picture: require('../assets/img/AWS_C2.png'),
       certification_ID: 'CJ5WP20CQB44QE94',
       certification_date: 'Jan 15, 2023 - Jan 15, 2026',
-      certification_website: 'Validate at: https://aws.amazon.com/verification',
+      certification_website: 'Validate',
     },
     {
       certification_name: 'AWS Certified Cloud Practitioner',
       certification_picture: require('../assets/img/Image_20231016010049.png'),
       certification_ID: '2P771062P214QF9B',
       certification_date: 'Jul 17, 2020 - Jan 15, 2026',
-      certification_website: 'Validate at: https://aws.amazon.com/verification',
+      certification_website: 'Validate',
     },
   ]
 }
